@@ -41,6 +41,7 @@ public class Plugin : BaseUnityPlugin
             _harmony.PatchAll(typeof(SplashScreenPatch));
             _harmony.PatchAll(typeof(MetaManagerPatch));
             _harmony.PatchAll(typeof(PlayerCosmeticsPatch));
+            _harmony.PatchAll(typeof(MaterialReferencePatch));
         }
         catch (System.Exception e)
         {
