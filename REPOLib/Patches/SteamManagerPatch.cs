@@ -29,7 +29,7 @@ internal static class SteamManagerPatch
 
         bool value = ConfigManager.VanillaDeveloperMode.Value;
 
-        if (SteamManager.instance.developerMode != value)
+        if (SteamManager.instance.developerFlags.debug_console != value)
         {
             if (value)
             {
@@ -41,6 +41,6 @@ internal static class SteamManagerPatch
             }
         }
 
-        SteamManager.instance.developerMode = value;
+        SteamManager.instance.developerFlags.debug_console = value;
     }
 }
