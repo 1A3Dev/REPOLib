@@ -34,7 +34,7 @@ public class Plugin : BaseUnityPlugin
             _harmony.PatchAll(typeof(StatsManagerPatch));
             _harmony.PatchAll(typeof(SemiFuncPatch));
             _harmony.PatchAll(typeof(AudioManagerPatch));
-            _harmony.PatchAll(typeof(SteamManagerPatch));
+            _harmony.PatchAll(typeof(PlatformManagerPatch));
             _harmony.PatchAll(typeof(PlayerControllerPatch));
             _harmony.PatchAll(typeof(DebugCommandHandlerPatch));
             _harmony.PatchAll(typeof(ResourcesPatch));
